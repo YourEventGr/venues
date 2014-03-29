@@ -35,28 +35,16 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
   </head>
   <body>
-
-
-
     <div class="container-fluid">
-
-      <div class="row-fluid">
-        <div class="span12">
-          <%= bootstrap_flash %>
-          <%= yield %>
-        </div>
-      </div><!--/row-->
-
+      <%= render 'layouts/header' %>
+      <%= yield %>
       <footer>
-        <p>&copy; Company 2012</p>
+        <p>&copy; <a href="http://www.improvebraga.org"/>Improve Braga 2014</a></p>
       </footer>
-
     </div> <!-- /container -->
-
     <!-- Javascripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
-
   </body>
 </html>
